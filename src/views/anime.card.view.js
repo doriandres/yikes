@@ -4,7 +4,7 @@ import ANIME_CARD_TEMPLATE from "./../templates/anime.card.template.js";
 
 class AnimeCardView extends View{
     constructor(){
-        super(ANIME_CARD_TEMPLATE);
+        super(ANIME_CARD_TEMPLATE, ['./src/styles/anime.card.style.css']);
         this.anime = observable(null);
 
         const cardTitle = this.findView('.anime_card_title');
